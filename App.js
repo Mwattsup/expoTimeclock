@@ -1,12 +1,15 @@
 import React, { useState } from 'react';
 import { StyleSheet, Text, View } from 'react-native';
-import List from './components/List';
+import {widthPercentageToDP as wp, heightPercentageToDP as hp} from 'react-native-responsive-screen';
+import Home from './components/Home';
+import Header from './components/Header'
 
 export default function App() {
   
   return (
     <View style={styles.container}>
-      <List />
+      <Header />
+      <Home />
     </View>
   )
 }
@@ -14,8 +17,6 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
+    backgroundColor: 'black',
   },
 });
