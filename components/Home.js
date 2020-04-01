@@ -31,7 +31,8 @@ const styles = StyleSheet.create({
     input: {
         height: hp('15%'),
         width: wp('40%'),
-        marginTop: hp('20%'),
+        marginTop: hp('32.5%'),
+        marginBottom: hp('32.5%'),
         paddingTop: hp('8%'),
         marginLeft: wp('30%'),
         marginRight: wp('30%'),
