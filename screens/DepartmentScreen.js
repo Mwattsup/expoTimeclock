@@ -7,7 +7,6 @@ export default function DepartmentScreens() {
 
     return (
         <View>
-            <Text>Hello World!</Text>
             <DepartmentList />
         </View>
     )

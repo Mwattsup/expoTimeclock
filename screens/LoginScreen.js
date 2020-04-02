@@ -10,6 +10,7 @@ export default function LoginScreen({ navigation }) {
     const changeHandler = (val) => {
         setLogin(val);
     }
+    
     const changeScreen = () => {
         navigation.navigate('DepartmentScreen');
     }

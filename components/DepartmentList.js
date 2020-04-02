@@ -1,36 +1,45 @@
 import React, { useState } from 'react';
-import { StyleSheet, Text, View, FlatList } from 'react-native';
+import { StyleSheet, Text, View, FlatList, TouchableOpacity } from 'react-native';
+import { widthPercentageToDP as wp, heightPercentageToDP as hp } from 'react-native-responsive-screen';
 
 export default function DepartmentList() {
-    const [thing, setThing] = useState([])
-    //     [
-    //     { name: 'matt', age: '24', key: '1' },
-    //     { name: 'tor', age: '25', key: '2' },
-    //     { name: 'frank', age: '24', key: '3' },
-    //     { name: 'heather', age: '24', key: '4' },
-    //     { name: 'chris', age: '24', key: '5' }
-    // ]
-
-    const data = [
-        { name: 'matt', age: '24', key: '1' },
-        { name: 'tor', age: '25', key: '2' },
-        { name: 'frank', age: '24', key: '3' },
-        { name: 'heather', age: '24', key: '4' },
-        { name: 'chris', age: '24', key: '5' }
-    ];
+    const [thing, setThing] = useState(
+        [
+            { name: 'Human Resources', key: '1' },
+            { name: 'Therapy', key: '2' },
+            { name: 'Orthopedic', key: '3' },
+            { name: 'Neuro', key: '4' },
+            { name: 'ICU', key: '5' }
+        ]);
 
     return (
-        <FlatList data={thing} renderItem={({ item }) => (
-            <Text>{item.name}</Text>
-        )} />
+        <View style={styles.container}>
+            <Text style={styles.title}>Departments</Text>
+            <FlatList data={thing} renderItem={({ item }) => (
+                <TouchableOpacity style={styles.buttons}>
+                    <Text style={styles.name}>{item.name}</Text>
+                </TouchableOpacity>
+            )} />
+        </View>
     )
 }
 
 const styles = StyleSheet.create({
-    container: {
-        flex: 1,
-        backgroundColor: '#fff',
-        alignItems: 'center',
-        justifyContent: 'center',
+    buttons: {
+        borderWidth: 2,
+        borderColor: 'red',
+        height: hp('6%'),
+        width: wp('90%'),
+        marginRight: wp('5%'),
+        marginLeft: wp('6%'),
+        marginBottom: hp('2%')
     },
+    title: {
+
+    },
+    name: {
+        fontSize: hp('3%'),
+        textAlign: 'center',
+        paddingTop: hp('1%')
+    }
 });
