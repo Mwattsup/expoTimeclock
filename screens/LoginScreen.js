@@ -3,13 +3,17 @@ import { StyleSheet, View, TextInput, TouchableOpacity, Text, TouchableWithoutFe
 import { widthPercentageToDP as wp, heightPercentageToDP as hp } from 'react-native-responsive-screen';
 import Header from '../components/Header';
 
-export default function LoginScreen() {
+export default function LoginScreen({ navigation }) {
 
     const [login, setLogin] = useState('');
 
     const changeHandler = (val) => {
         setLogin(val);
     }
+    const changeScreen = () => {
+        navigation.navigate('DepartmentScreen');
+    }
+
 
     return (
         <TouchableWithoutFeedback onPress={() => { Keyboard.dismiss() }}>
@@ -19,7 +23,7 @@ export default function LoginScreen() {
                     placeholder='Login id' placeholderTextColor='#fff'
                     onChangeText={changeHandler}
                 />
-                <TouchableOpacity>
+                <TouchableOpacity onPress={changeScreen}>
                     <Text style={styles.button}>login</Text>
                 </TouchableOpacity>
             </View>

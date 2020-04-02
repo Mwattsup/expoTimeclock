@@ -5,10 +5,16 @@ import DepartmentScreen from '../screens/DepartmentScreen';
 
 const screens = {
     LoginScreen: {
-        screen: LoginScreen
+        screen: LoginScreen,
+        navigationOptions: {
+            headerShown: false
+        },
     },
     DepartmentScreen: {
-        screen: DepartmentScreen
+        screen: DepartmentScreen,
+        navigationOptions: {
+            headerShown: false
+        },
     },
 }
 
