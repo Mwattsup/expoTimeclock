@@ -9,7 +9,16 @@ export default function DepartmentList() {
             { name: 'Therapy', key: '2' },
             { name: 'Orthopedic', key: '3' },
             { name: 'Neuro', key: '4' },
-            { name: 'ICU', key: '5' }
+            { name: 'ICU', key: '5' },
+            { name: 'Tech', key: '6' },
+            { name: 'Cardiac', key: '7' },
+            { name: 'Engineering', key: '8' },
+            { name: 'Production', key: '9' },
+            { name: 'Sales', key: '10' },
+            { name: 'Executive', key: '11' },
+            { name: 'Security', key: '12' },
+            { name: 'Purchasing', key: '13' },
+            { name: 'Environmental Services', key: '14' },
         ]);
 
     return (
