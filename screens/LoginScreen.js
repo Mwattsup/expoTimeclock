@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
-import { StyleSheet, View, TextInput, TouchableOpacity, Text } from 'react-native';
-import {widthPercentageToDP as wp, heightPercentageToDP as hp} from 'react-native-responsive-screen';
+import { StyleSheet, View, TextInput, TouchableOpacity, Text, TouchableWithoutFeedback, Keyboard } from 'react-native';
+import { widthPercentageToDP as wp, heightPercentageToDP as hp } from 'react-native-responsive-screen';
+import Header from '../components/Header';
 
-export default function Home() {
+export default function LoginScreen() {
 
     const [login, setLogin] = useState('');
 
@@ -11,15 +12,18 @@ export default function Home() {
     }
 
     return (
-        <View style={styles.container}>
-            <TextInput  keyboardType='numeric' style={styles.input}
-            placeholder='Login id' placeholderTextColor='#fff'
-            onChangeText={changeHandler}
-            />
-            <TouchableOpacity>
-                <Text style={styles.button}>login</Text>
-            </TouchableOpacity>
-        </View>
+        <TouchableWithoutFeedback onPress={() => { Keyboard.dismiss() }}>
+            <View style={styles.container}>
+                <Header />
+                <TextInput keyboardType='numeric' style={styles.input}
+                    placeholder='Login id' placeholderTextColor='#fff'
+                    onChangeText={changeHandler}
+                />
+                <TouchableOpacity>
+                    <Text style={styles.button}>login</Text>
+                </TouchableOpacity>
+            </View>
+        </TouchableWithoutFeedback>
     )
 }
 
@@ -54,4 +58,4 @@ const styles = StyleSheet.create({
         marginRight: wp('45%'),
         marginTop: hp('2%')
     }
-})
+});
