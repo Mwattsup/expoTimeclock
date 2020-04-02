@@ -15,7 +15,7 @@ export default function DepartmentList() {
     return (
         <View style={styles.container}>
             <Text style={styles.title}>Departments</Text>
-            <FlatList data={thing} renderItem={({ item }) => (
+            <FlatList style={styles.container} data={thing} renderItem={({ item }) => (
                 <TouchableOpacity style={styles.buttons}>
                     <Text style={styles.name}>{item.name}</Text>
                 </TouchableOpacity>
@@ -25,21 +25,33 @@ export default function DepartmentList() {
 }
 
 const styles = StyleSheet.create({
+    container: {
+        backgroundColor: 'black',
+        height: hp('100%'),
+
+    },
     buttons: {
         borderWidth: 2,
-        borderColor: 'red',
+        borderColor: '#303030',
         height: hp('6%'),
         width: wp('90%'),
         marginRight: wp('5%'),
         marginLeft: wp('6%'),
-        marginBottom: hp('2%')
+        marginBottom: hp('2%'),
+        backgroundColor: '#151515',
+        borderRadius: 10,
     },
     title: {
-
+        color: 'white',
+        fontSize: hp('5%'),
+        textAlign: 'center',
+        paddingTop: hp('10%'),
+        marginBottom: hp('5%')
     },
     name: {
         fontSize: hp('3%'),
         textAlign: 'center',
-        paddingTop: hp('1%')
+        paddingTop: hp('1%'),
+        color: 'white'
     }
 });
