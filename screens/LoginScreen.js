@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { StyleSheet, View, TextInput, TouchableOpacity, Text, TouchableWithoutFeedback, Keyboard } from 'react-native';
+import { StyleSheet, View, TextInput, TouchableOpacity, Text, TouchableWithoutFeedback, Keyboard, Alert } from 'react-native';
 import { widthPercentageToDP as wp, heightPercentageToDP as hp } from 'react-native-responsive-screen';
 import Header from '../components/Header';
 
@@ -10,9 +10,15 @@ export default function LoginScreen({ navigation }) {
     const changeHandler = (val) => {
         setLogin(val);
     }
-    
+
     const changeScreen = () => {
-        navigation.navigate('DepartmentScreen');
+        if (/^[a-z]{3}[0-9]{4}$/.test(login)) {
+            navigation.navigate('DepartmentScreen');
+        } else {
+            Alert.alert('Invalid ID', 'make sure you are using your 3-4ID', [
+                { text: 'Ok', onPress: () => console.log('alert closed') }
+            ]);
+        }
     }
 
 
@@ -20,7 +26,7 @@ export default function LoginScreen({ navigation }) {
         <TouchableWithoutFeedback onPress={() => { Keyboard.dismiss() }}>
             <View style={styles.container}>
                 <Header />
-                <TextInput keyboardType='numeric' style={styles.input}
+                <TextInput style={styles.input}
                     placeholder='Login id' placeholderTextColor='#fff'
                     onChangeText={changeHandler}
                 />
