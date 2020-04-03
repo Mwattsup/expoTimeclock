@@ -12,7 +12,7 @@ export default function LoginScreen({ navigation }) {
     }
 
     const changeScreen = () => {
-        if (/^[a-z]{3}[0-9]{4}$/.test(login)) {
+        if (/^[a-z]{3}[0-9]{4}$/i.test(login)) {
             navigation.navigate('DepartmentScreen');
         } else {
             Alert.alert('Invalid ID', 'make sure you are using your 3-4ID', [
@@ -27,7 +27,9 @@ export default function LoginScreen({ navigation }) {
             <View style={styles.container}>
                 <Header />
                 <TextInput style={styles.input}
-                    placeholder='Login id' placeholderTextColor='#fff'
+                    keyboardType='default'
+                    placeholder='Login id' 
+                    placeholderTextColor='#fff'
                     onChangeText={changeHandler}
                 />
                 <TouchableOpacity onPress={changeScreen}>
