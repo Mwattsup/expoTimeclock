@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { StyleSheet, Text, View, FlatList, TouchableOpacity, Button } from 'react-native';
 import { widthPercentageToDP as wp, heightPercentageToDP as hp } from 'react-native-responsive-screen';
+import Back from '../components/Back';
 
 export default function DepartmentScreen({ navigation }) {
 
@@ -267,7 +268,10 @@ export default function DepartmentScreen({ navigation }) {
 
     return (
         <View style={styles.container}>
+            <View style={styles.topContainer}>
+            <Back />
             <Text style={styles.title}>Departments</Text>
+            </View>
             <FlatList style={styles.container} data={departments} renderItem={({ item }) => (
                 <TouchableOpacity onPress={() => navigation.navigate('EmployeePage', item)} style={styles.buttons}>
                     <Text style={styles.name}>{item.name}</Text>
@@ -285,26 +289,30 @@ const styles = StyleSheet.create({
     },
     buttons: {
         borderWidth: 2,
-        borderColor: '#303030',
+        borderColor: '#4169e1',
         height: hp('6%'),
         width: wp('90%'),
         marginRight: wp('5%'),
-        marginLeft: wp('6%'),
-        marginBottom: hp('2%'),
+        marginLeft: wp('5%'),
+        marginBottom: hp('1%'),
         backgroundColor: '#151515',
-        borderRadius: 10,
+        borderRadius: 10
     },
     title: {
         color: 'white',
         fontSize: hp('5%'),
-        textAlign: 'center',
-        paddingTop: hp('10%'),
-        marginBottom: hp('5%')
+        alignContent: 'center',
+        marginTop: hp('.5%'),
+        marginBottom: hp('3%'),
+        width: wp('100%'),
+        textAlign: 'center'
     },
     name: {
         fontSize: hp('3%'),
         textAlign: 'center',
         paddingTop: hp('1%'),
         color: 'white'
+    },
+    topContainer: {
     }
 });

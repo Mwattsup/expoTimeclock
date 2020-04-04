@@ -32,8 +32,8 @@ export default function LoginScreen({ navigation }) {
                     placeholderTextColor='#fff'
                     onChangeText={changeHandler}
                 />
-                <TouchableOpacity onPress={changeScreen}>
-                    <Text style={styles.button}>login</Text>
+                <TouchableOpacity style={styles.button} onPress={changeScreen}>
+                    <Text style={styles.touch}>login</Text>
                 </TouchableOpacity>
             </View>
         </TouchableWithoutFeedback>
@@ -70,5 +70,10 @@ const styles = StyleSheet.create({
         marginLeft: wp('45%'),
         marginRight: wp('45%'),
         marginTop: hp('2%')
+    },
+    touch: {
+        color: '#fff',
+        alignSelf: 'center',
+        fontSize: hp('1.5%'),
     }
 });

@@ -3,6 +3,7 @@ import { createAppContainer } from 'react-navigation';
 import LoginScreen from '../screens/LoginScreen';
 import DepartmentScreen from '../screens/DepartmentScreen';
 import EmployeePage from '../screens/EmployeePage';
+import IndividualEmp from '../screens/IndividualEmp';
 
 const screens = {
     LoginScreen: {
@@ -19,6 +20,12 @@ const screens = {
     },
     EmployeePage: {
         screen: EmployeePage,
+        navigationOptions: {
+            headerShown: false
+        }
+    },
+    IndividualEmp: {
+        screen: IndividualEmp,
         navigationOptions: {
             headerShown: false
         }
