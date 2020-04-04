@@ -10,7 +10,7 @@ export default function DepartmentScreen({ navigation }) {
                 name: 'Human Resources',
                 key: '1',
                 budget: {
-                    maxAmount: 100000,
+                    maxAmount: 720000,
                     used: 56234
                 },
                 employees: [
@@ -32,7 +32,7 @@ export default function DepartmentScreen({ navigation }) {
                 name: 'Rehabilitation',
                 key: '2',
                 budget: {
-                    maxAmount: 120000,
+                    maxAmount: 5900000,
                     used: 72258
                 },
                 employees: [
@@ -54,7 +54,7 @@ export default function DepartmentScreen({ navigation }) {
                 name: 'Orthopedic',
                 key: '3',
                 budget: {
-                    maxAmount: 150000,
+                    maxAmount: 675000,
                     used: 92854
                 },
                 employees: [
@@ -76,7 +76,7 @@ export default function DepartmentScreen({ navigation }) {
                 name: 'Neuro',
                 key: '4',
                 budget: {
-                    maxAmount: 200000,
+                    maxAmount: 650000,
                     used: 126244
                 },
                 employees: [
@@ -120,7 +120,7 @@ export default function DepartmentScreen({ navigation }) {
                 name: 'Emergency Department',
                 key: '6',
                 budget: {
-                    maxAmount: 250000,
+                    maxAmount: 360000,
                     used: 134281
                 },
                 employees: [
@@ -142,7 +142,7 @@ export default function DepartmentScreen({ navigation }) {
                 name: 'Cardiac',
                 key: '7',
                 budget: {
-                    maxAmount: 220000,
+                    maxAmount: 560000,
                     used: 176226
                 },
                 employees: [
@@ -164,7 +164,7 @@ export default function DepartmentScreen({ navigation }) {
                 name: 'Maternity',
                 key: '8',
                 budget: {
-                    maxAmount: 180000,
+                    maxAmount: 561000,
                     used: 86335
                 },
                 employees: [
@@ -186,7 +186,7 @@ export default function DepartmentScreen({ navigation }) {
                 name: 'Radiology',
                 key: '9',
                 budget: {
-                    maxAmount: 120000,
+                    maxAmount: 532000,
                     used: 43264
                 },
                 employees: [
@@ -208,58 +208,55 @@ export default function DepartmentScreen({ navigation }) {
                 name: 'Security',
                 key: '10',
                 budget: {
-                    maxAmount: 100000,
+                    maxAmount: 125000,
                     used: 56234
                 },
                 employees: [
-                    { name: 'Sasha Johns', jobTitle: 'Director of Secuirity', pay: '', hours: 0 },
-                    { name: 'Zachariah Coffey', jobTitle: 'Secuirity Officer', pay: '', hours: 0 },
-                    { name: 'Kanye Harding', jobTitle: 'Secuirity Officer', pay: '', hours: 0 },
-                    { name: 'Tyler Burris', jobTitle: 'Secuirity Officer', pay: '', hours: 0 },
-                    { name: 'Marco Houghton', jobTitle: 'Secuirity Officer', pay: '', hours: 0 },
-                    { name: 'Omer Richardson', jobTitle: 'Secuirity Officer', pay: '', hours: 0 },
-                    { name: 'Barbara Waters', jobTitle: 'Secuirity Officer', pay: '', hours: 0 },
+                    { name: 'Sasha Johns', jobTitle: 'Director of Secuirity', pay: '22000', hours: 40 },
+                    { name: 'Zachariah Coffey', jobTitle: 'Secuirity Officer', pay: '18000', hours: 40 },
+                    { name: 'Tyler Burris', jobTitle: 'Secuirity Officer', pay: '18000', hours: 40 },
+                    { name: 'Marco Houghton', jobTitle: 'Secuirity Officer', pay: '18000', hours: 40 },
+                    { name: 'Omer Richardson', jobTitle: 'Secuirity Officer', pay: '18000', hours: 40 },
+                    { name: 'Barbara Waters', jobTitle: 'Secuirity Officer', pay: '18000', hours: 40 },
                 ]
             },
             {
                 name: 'IT',
                 key: '11',
                 budget: {
-                    maxAmount: 100000,
+                    maxAmount: 1200000,
                     used: 56234
                 },
                 employees: [
-                    { name: 'Taliyah Mill', jobTitle: '', pay: '', hours: 0 },
-                    { name: 'Dawson Frederick', jobTitle: '', pay: '', hours: 0 },
-                    { name: 'Miley Harmon', jobTitle: '', pay: '', hours: 0 },
-                    { name: 'Bob Zhang', jobTitle: '', pay: '', hours: 0 },
-                    { name: 'Robyn Cote', jobTitle: '', pay: '', hours: 0 },
-                    { name: 'Cobie Donovan', jobTitle: '', pay: '', hours: 0 },
-                    { name: 'Carmel Schwartz', jobTitle: '', pay: '', hours: 0 },
-                    { name: 'Conal Drummond', jobTitle: '', pay: '', hours: 0 },
-                    { name: 'Alina Nicholson', jobTitle: '', pay: '', hours: 0 },
-                    { name: 'Danniella Glover', jobTitle: '', pay: '', hours: 0 },
-                    { name: 'Christie Britton', jobTitle: '', pay: '', hours: 0 },
-                    { name: 'Luka Witt', jobTitle: '', pay: '', hours: 0 }
+                    { name: 'Taliyah Mill', jobTitle: 'Accounts and Finance', pay: '120000', hours: 40 },
+                    { name: 'Dawson Frederick', jobTitle: 'HR', pay: '120000', hours: 40 },
+                    { name: 'Miley Harmon', jobTitle: 'Governance', pay: '120000', hours: 40 },
+                    { name: 'Bob Zhang', jobTitle: 'Research and Development', pay: '120000', hours: 40 },
+                    { name: 'Robyn Cote', jobTitle: 'Functionality', pay: '120000', hours: 40 },
+                    { name: 'Cobie Donovan', jobTitle: 'Infrastructure', pay: '120000', hours: 40 },
+                    { name: 'Carmel Schwartz', jobTitle: 'Product Development', pay: '120000', hours: 40 },
+                    { name: 'Conal Drummond', jobTitle: 'Admin Department', pay: '120000', hours: 40 },
+                    { name: 'Alina Nicholson', jobTitle: 'Application Development', pay: '120000', hours: 40 },
+                    { name: 'Danniella Glover', jobTitle: 'Technical Support', pay: '120000', hours: 40 },
                 ]
             },
             {
                 name: 'Environmental Services',
                 key: '12',
                 budget: {
-                    maxAmount: 120000,
+                    maxAmount: 500000,
                     used: 56234
                 },
                 employees: [
-                    { name: 'Jarrad Choi', jobTitle: 'Director of Environmental Services', pay: '', hours: 0 },
-                    { name: 'Jesus Barlow', jobTitle: 'Environmental Services Technician', pay: '', hours: 0 },
-                    { name: 'Haley Pemberton', jobTitle: 'Environmental Services Technician', pay: '', hours: 0 },
-                    { name: 'Darrel Carver', jobTitle: 'Environmental Services Technician', pay: '', hours: 0 },
-                    { name: 'Paolo Palme', jobTitle: 'Environmental Services Technician', pay: '', hours: 0 },
-                    { name: 'Kaylan Velez', jobTitle: 'Environmental Services Technician', pay: '', hours: 0 },
-                    { name: 'Billy Werner', jobTitle: 'Environmental Services Manager', pay: '', hours: 0 },
-                    { name: 'Priyanka Hirst', jobTitle: 'Environmental Services Dispatcher', pay: '', hours: 0 },
-                    { name: 'Jorden Sellers', jobTitle: 'Environmental Services Waste Control', pay: '', hours: 0 }
+                    { name: 'Jarrad Choi', jobTitle: 'Director of Environmental Services', pay: '55000', hours: 40 },
+                    { name: 'Jesus Barlow', jobTitle: 'Environmental Services Technician', pay: '55000', hours: 40 },
+                    { name: 'Haley Pemberton', jobTitle: 'Environmental Services Technician', pay: '55000', hours: 40 },
+                    { name: 'Darrel Carver', jobTitle: 'Environmental Services Technician', pay: '55000', hours: 40 },
+                    { name: 'Paolo Palme', jobTitle: 'Environmental Services Technician', pay: '55000', hours: 40 },
+                    { name: 'Kaylan Velez', jobTitle: 'Environmental Services Technician', pay: '55000', hours: 40 },
+                    { name: 'Billy Werner', jobTitle: 'Environmental Services Manager', pay: '55000', hours: 40 },
+                    { name: 'Priyanka Hirst', jobTitle: 'Environmental Services Dispatcher', pay: '55000', hours: 40 },
+                    { name: 'Jorden Sellers', jobTitle: 'Environmental Services Waste Control', pay: '55000', hours: 40 }
                 ]
             },
         ]);
