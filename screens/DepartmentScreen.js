@@ -168,11 +168,11 @@ export default function DepartmentScreen({ navigation }) {
                     used: 86335
                 },
                 employees: [
-                    { name: 'Aliyah Hubbard', jobTitle: 'Maternity Director', pay: 88000, hours: 85, key: 1 },
-                    { name: 'Hallie Cook', jobTitle: 'Nurse Manager', pay: 79000, hours: 40, key: 86 },
-                    { name: 'Kathryn Taylor', jobTitle: 'Registered Nurse', pay: 45000, hours: 87, key: 1 },
-                    { name: 'Evelina Bains', jobTitle: 'Registered Nurse', pay: 47000, hours: 88, key: 1 },
-                    { name: 'Maiya Figueroa', jobTitle: 'Registered Nurse', pay: 45000, hours: 89, key: 1 },
+                    { name: 'Aliyah Hubbard', jobTitle: 'Maternity Director', pay: 88000, hours: 40, key: 1111111 },
+                    { name: 'Hallie Cook', jobTitle: 'Nurse Manager', pay: 79000, hours: 40, key: 555555 },
+                    { name: 'Kathryn Taylor', jobTitle: 'Registered Nurse', pay: 45000, hours: 40, key: 6666666 },
+                    { name: 'Evelina Bains', jobTitle: 'Registered Nurse', pay: 47000, hours: 40, key: 333333 },
+                    { name: 'Maiya Figueroa', jobTitle: 'Registered Nurse', pay: 45000, hours: 40, key: 2222222 },
                     { name: 'Jude Nash', jobTitle: 'Registered Nurse', pay: 46000, hours: 36, key: 90 },
                     { name: 'Sharon Patton', jobTitle: 'Registered Nurse', pay: 42000, hours: 36, key: 91 },
                     { name: 'Isobel Klein', jobTitle: 'Registered Nurse', pay: 48000, hours: 36, key: 92 },
